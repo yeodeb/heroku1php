@@ -1,8 +1,39 @@
-…or create a new repository on the command line
+1-Tu crée un dossier php (ton application) sur ton ordinateur (Ex: projet)
+
+2-Tu crée un compte sur "github.com" , labas tu crée un repository-un dossier 
+du meme nom que ton dossier php crée sur ton ordinateur (Ex: projet)
+
+3-Install git sur ton ordinateur (Telecharger et installer)
+  *tu tape ces commandes sur "cmd" ou "un editeur de texte" (Tu te place dans le dossier pour le faire (Ex: projet)
+  *Tu tape : >>>git init
+	     >>>git add .
+	     >>>git commit "mon premier commit"
+	     >>>git remote add origin https://github.com/yeodeb/projet.git    
+	     >>>git push -u origin master
+	NB:(Ces commandes enverront tous les fichiers de l'ordinateur vers github.com en ligne)
+	  :Les commandes git que tu tape te seront données quand tu crée un repository-un dossier sur "github.com" automatiquement	     
+	
+4-Tu crée un compte sur "heroku.com",  labas tu crée un dossier
+	>>new
+	>>Create New App
+	>>Add this app to a pipeline
+	>>create new pipeline
+	>>/Metttre le Name the pipeline(le meme nom que celui du dossier sur "github.com  (Ex: projet) 
+	>>/Choose a stage to add this app to (laisser stage)
+	>>/cliquez sur create
+	>>/Dans deployment method, choisir GitHub
+	>>/Dans Connect to GitHub, Mettre le nom du dossier "Github.com", cliquez sur "search"
+	>>/Quand il trouve le dossier, vous cliquez sur connect
+	>>/Tout en bas dans la partie "Manual deploy", vous cliquez sur "Deploy Branch"
+	>>/Juste au bas de page, vous cliquez sur "View", cela ouvrira un nouvel onglet et voici votre application deployée
+	>>/ Vous retiendrez cette url pour presenter aux personnes desireuses de voir, si vous perdez cela vous pouvez toujours vous connecter sur heroku et le retrouver
+
+MERCI
+
 
 echo "# heroku1php" >> README.md
 git init
-git add README.md
+git add .
 git commit -m "first commit"
 git remote add origin https://github.com/yeodeb/heroku1php.git
 git push -u origin master
